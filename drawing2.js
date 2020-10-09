@@ -1,7 +1,7 @@
 let drawing2 = function(p) {
   let WIDTH = 600;
   let HEIGHT = 600;
-  const INCR = 2;
+  const INCR = 4;
   let ypos = 0;
   let lines = [];
 

@@ -86,6 +86,7 @@ let drawing1 = function(p) {
   }
 
   let draw = function() {
+    p.stroke(0);
     for (let i = 0; i < 4; i++) {
       let res = draw3(startX[i], startY[i], i);
       startX[i] = res.startX;

@@ -1,9 +1,11 @@
 let sketch = function(p) {
   let d = [
     new drawing1(p),
-    new drawing2(p)
+    new drawing2(p),
+    new drawing3(p),
+    new drawing4(p),
   ];
-  let index = 0;
+  let index = 2;
 
   p.setup = function(){
     p.createCanvas(p.displayWidth, p.displayHeight);
