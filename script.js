@@ -4,8 +4,9 @@ let sketch = function(p) {
     new drawing2(p),
     new drawing3(p),
     new drawing4(p),
+    new drawing5(p),
   ];
-  let index = 2;
+  let index = 4;
 
   p.setup = function(){
     p.createCanvas(p.displayWidth, p.displayHeight);
@@ -16,12 +17,25 @@ let sketch = function(p) {
     d[index].draw();
   }
 
-  p.mouseClicked = function() {
-    p.clear();
-    index++;
-    if (index >= d.length) {
-      index = 0;
+  p.preload = function(){
+    if (d[index].preload) {
+      d[index].preload();
     }
-    d[index].setup();
+  }
+
+  p.mouseClicked = function() {
+    let go_to_next_drawing = true;
+
+    if (d[index].next) {
+      go_to_next_drawing = d[index].next();
+    }
+    if (go_to_next_drawing) {
+      p.clear();
+      index++;
+      if (index >= d.length) {
+        index = 0;
+      }
+      d[index].setup();
+    }
   }
 }
