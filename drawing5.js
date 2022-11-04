@@ -2,11 +2,12 @@ let drawing5 = function(p) {
   let WIDTH = 600;
   let HEIGHT = 600;
   let img = [];
-  let current = 0;
+  let current;
 
   let setup = function() {
     WIDTH = p.windowWidth;
     HEIGHT = p.windowHeight;
+    current = 0;
   }
 
   let preload = function() {
