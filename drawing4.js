@@ -1,3 +1,5 @@
+// using https://learn.ml5js.org/#/reference/sketchrnn, use rabbit model and drawn the line when pen is up
+
 let drawing4 = function(p) {
   let WIDTH = 600;
   let HEIGHT = 600;
