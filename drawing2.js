@@ -1,3 +1,6 @@
+// Horizontal lines drawn starting from top left of screen and going down
+// https://editor.p5js.org/lu22do/sketches/2dxr60W1T
+
 let drawing2 = function(p) {
   let WIDTH = 600;
   let HEIGHT = 600;
