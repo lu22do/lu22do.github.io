@@ -1,3 +1,5 @@
+// using https://learn.ml5js.org/#/reference/sketchrnn, one SketchRNN model is randomly selected and drawn over and over with different color
+
 let drawing3 = function(p) {
   let WIDTH = 600;
   let HEIGHT = 600;
