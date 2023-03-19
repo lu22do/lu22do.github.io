@@ -1,3 +1,6 @@
+// 4 drawing cursors that starts from each of the 4 screen borders
+// https://editor.p5js.org/lu22do/sketches/zofUVWWZ
+
 let drawing1 = function(p) {
 
   let WIDTH = 600;
